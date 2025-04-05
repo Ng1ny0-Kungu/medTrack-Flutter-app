@@ -83,12 +83,12 @@ class _SignUpPageState extends State<SignUpPage> {
                         children: [
                           Text("I agree to MedTrack's "),
                           GestureDetector(
-                            onTap: () => _launchURL('https://example.com/privacy'),
+                            onTap: () => _launchURL('https://ng1ny0-kungu.github.io/medTrack-Privacy-Policy/'),
                             child: Text('Privacy Policy', style: TextStyle(color: Colors.blue, decoration: TextDecoration.underline)),
                           ),
                           Text(' and '),
                           GestureDetector(
-                            onTap: () => _launchURL('https://example.com/terms'),
+                            onTap: () => _launchURL('https://ng1ny0-kungu.github.io/medTrack-Terms-Of-Service/'),
                             child: Text('Terms of Service', style: TextStyle(color: Colors.blue, decoration: TextDecoration.underline)),
                           ),
                         ],
