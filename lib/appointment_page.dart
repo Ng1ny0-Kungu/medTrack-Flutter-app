@@ -89,11 +89,11 @@ class _AppointmentPageState extends State<AppointmentPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Select Doctor:", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              Text("Select Nurse:", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
               DropdownButton<String>(
                 isExpanded: true,
                 value: selectedDoctor,
-                hint: Text("Choose a doctor"),
+                hint: Text("Choose a Nurse"),
                 items: doctors.map((String doctor) {
                   return DropdownMenuItem<String>(
                     value: doctor,
@@ -134,7 +134,7 @@ class _AppointmentPageState extends State<AppointmentPage> {
               Divider(),
               Text("Appointment Summary", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               SizedBox(height: 10),
-              Text("Doctor: ${selectedDoctor ?? "Not selected"}", style: TextStyle(fontSize: 16)),
+              Text("Nurse: ${selectedDoctor ?? "Not selected"}", style: TextStyle(fontSize: 16)),
               Text("Date: ${selectedDate.toLocal()}".split(' ')[0], style: TextStyle(fontSize: 16)),
               Text("Time: ${selectedTime.format(context)}", style: TextStyle(fontSize: 16)),
               SizedBox(height: 30),
